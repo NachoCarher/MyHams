@@ -1,4 +1,4 @@
-# CarherHams
+# MyHams
 
 Se pueden consultar los pedidos realizados por si se desea repetir alguno o comprobar su estado.
 
