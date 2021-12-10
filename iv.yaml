@@ -1,0 +1,5 @@
+lenguaje: python
+objetos_valor: 
+  -modules/producto.py
+  -modules/productoVenta.py
+
