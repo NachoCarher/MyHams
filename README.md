@@ -72,3 +72,7 @@ Para comprobar la sintaxis de los archivos `.py` utilizados, se utiliza la herra
 poetry shell
 inv check
 ```
+## Documentación
+Para obtener más información acerca del proyecto puede consultar:
+- [Usuarios e historia de usuario](docs/DOCUMENTACION.md)
+- [Herramientas de desarrollo](docs/dev_tools.md)
