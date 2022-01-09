@@ -8,12 +8,12 @@ def installdeps(c):
     run("poetry install")
 
 @task
-def lint(c):
+def check(c):
     """
     Tarea para comprobar la sintaxis de los ficheros fuente. 
-    Utilizando el verificador Pylint.
+    Utilizando el modulo de compilacion de fuentes de python 'py_compile'.
     """
     print("Combrobando codigos fuente...")
     
     # Verifica los códigos del directorio modules
-    run("pylint -E modules")
+    run("python -m py_compile modules/*.py")
