@@ -29,7 +29,7 @@ eso se traduce en pérdidas y supone una cantidad de dinero que al final no pued
 
 ## Historias de usuario
 
-- [HU1](https://github.com/NachoCarher/MyHams/issues/6) -> Como empresario, quiero que el sistema me proporcione información como para poder decidir sobre que productos de los que tengo en mi inventario son los que debería seguir vendiendo o aumentar su stock y cúales son aquellos que no me están siendo rentables y debería retirar.
+- [HU1](https://github.com/NachoCarher/MyHams/issues/6) -> Como empresario, quiero que el sistema me proporcione información como para poder decidir sobre qué productos de los que tengo en mi inventario son los que debería seguir vendiendo o aumentar su stock y cuáles son aquellos que no me están siendo rentables y debería retirar.
 - [HU2](https://github.com/NachoCarher/MyHams/issues/7) -> Como empresario, una cosa que se debe de manejar bien en el sector alimentario es saber detectar a la perfección cuáles son aquellos productos que generan pérdidas o bien porque se venden poco o bien porque a pesar de que no se vendan tan mal, el hecho de mantenerlos a cierta temperatura (mantenimiento) supone un gasto notable. Por eso en este negocio es importante disponer de productos que se vendan lo antes posible, pues al ser alimentos, disponen de fecha de caducidad y una vez pasada ésta no se podrán vender.
 - [HU3](https://github.com/NachoCarher/MyHams/issues/11) -> Como empresario, me gustaría poder registrar en la aplicación los distintos tipos de productos que venderé en mi negocio con su respectiva información para poder organizar más intuitivamente el stock.
 
