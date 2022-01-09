@@ -50,7 +50,7 @@ Es la herramienta que gestiona e instala todas las dependencias necesarias
 para que el proyecto funcione adecuadamente. Para instalarla usar:
 
 ```
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+curl -sSL https://install.python-poetry.org | python3 -
 ```
 
 #### Este repositorio
@@ -58,8 +58,9 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 [Clonar](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) este repositorio, y para la instalacion de las dependencias con poetry:
 
 ```
-cd MyHams
-poetry install
+git clone https://github.com/NachoCarher/MyHams.git;
+cd MyHams;
+poetry install;
 ```
 
 ## Uso
