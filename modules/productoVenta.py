@@ -2,13 +2,14 @@
 
 from producto import *
 
-
 class ProductoVenta(Producto):
     """
     Clase que representa un producto a la venta.
 
     Parametros
     ----------
+    id : str, default=''
+        Identificador del producto.
     nom : str, default=''
         Nombre del producto.
     info : str, default=''
@@ -23,10 +24,10 @@ class ProductoVenta(Producto):
         Máximo de unidades de un producto que deber de haber en stock.
     """
 
-    def __init__(self, nom='', info='', cantidad=0, precio=0.0, min=0, max=0):   
+    def __init__(self, id='', nom='', info='', cantidad=0, precio=0.0, min=0, max=0):   
         
         # Invoca al constructor de clase Producto
-        Producto.__init__(self, nom, info)
+        Producto.__init__(self, id, nom, info)
 
         self.cantidad = cantidad
         self.precio = precio
