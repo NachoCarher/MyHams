@@ -7,3 +7,5 @@ objetos_valor:
 automatizar:
   fichero: tasks.py
   orden: inv
+
+test: tests/test_producto_venta.py
