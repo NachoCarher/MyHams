@@ -1,6 +1,6 @@
 # Clase para almacenar la info de un producto que esta en venta
 
-from producto import *
+from modules.producto import *
 
 class ProductoVenta(Producto):
     """
