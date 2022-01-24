@@ -69,9 +69,24 @@ poetry install
 Para comprobar la sintaxis de los archivos `.py` utilizados, se utiliza la herramienta [invoke](https://www.pyinvoke.org/):
 
 ```
-poetry shell
-inv check
+poetry shell;
+inv check;
 ```
+#### Ejecución de los tests
+
+Se utiliza Pytest para testear el código de la clase principal ejecutando los tests que hay en [tests](tests/) . 
+Al ejecutar la siguiente orden nos situamos en la carpeta principal del proyecto y Pytest localiza todos aquellos archivos que empiecen
+por 'test_'. Tambien se puede ejecutar un test determinado o bien seleccionar un directorio para buscar tests.
+
+```
+inv test
+```
+
+Funcionalidades que se testean:
+- Comprobar que hay una selección de productos disponibles.
+- Comprobar que la cantidad de un producto es inferior o igual a un nivel máximo especificado.
+- Comprobar que la cantidad de un producto es superior o igual a un nivel mínimo especificado.
+
 ## Documentación
 Para obtener más información acerca del proyecto puede consultar:
 - [Usuarios e historia de usuario](docs/DOCUMENTACION.md)
