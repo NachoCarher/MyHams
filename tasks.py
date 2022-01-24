@@ -17,3 +17,10 @@ def lint(c):
     
     # Verifica los códigos del directorio modules
     run("pylint -E modules")
+
+@task
+def test(c):
+    '''
+    Lanza los tests creados para el proyecto
+    '''
+    run ('python3 -m pytest')
