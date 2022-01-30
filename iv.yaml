@@ -1,5 +1,7 @@
 lenguaje: python
-objetos_valor: 
-  -modules/producto.py
-  -modules/productoVenta.py
 
+entidad: modules/producto.py
+  
+automatizar:
+  fichero: tasks.py
+  orden: inv
