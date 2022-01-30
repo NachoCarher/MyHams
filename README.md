@@ -55,7 +55,7 @@ curl -sSL https://install.python-poetry.org | python3 -
 
 #### Este repositorio
 
-[Clonar](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) este repositorio, y para la instalacion de las dependencias con poetry:
+Clonar este repositorio, y para la instalacion de las dependencias con poetry:
 
 ```
 git clone https://github.com/NachoCarher/MyHams.git;
