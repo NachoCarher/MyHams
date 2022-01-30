@@ -12,51 +12,6 @@ Las razones más significativas por las que se ha elegido Python como lenguaje d
 - El proyecto tiene como enfoque modelar todo en función a clases y a objetos y Python al ofrecer una programación orientada a objetos nos proporciona
 el uso de conceptos como la herencia, abstracción o polimorfismo.
 
-## Gestor de dependencias
-
-Requisitos que debe tener un gestor de dependencias:
-- Sintaxis centrada en la limpieza y sencillez.
-- Buen soporte por parte de su comunidad, de forma que tenga un mantenimiento relativamente constante.
-- Que sea conocido entre la comunidad Python y ampliar el alcance del desarrollo. 
-
-### [Pip](https://pypi.org/project/pip/)
-
-Es un sistema de gestión de paquetes para instalar y administrar bibliotecas en Python. 
-Viene incluido desde la version de Python 2.7.9 y desde la versión 3.4.
-Cabe a destacar que las actualizaciones de la dependencias se deben realizar manualmente, esta aspecto se opone a su uso en relación a la automatización.
-
-Es sencillo, tiene un soporte contínuo y es conocido, pero la última característica comentada se puede considerar como una desventaja y como consecuencia no
-es suficiente como para elegirlo.
-
-- Puntuación: 2.5/3
-- Conclusión: ✗
-
-
-### [Poetry](https://python-poetry.org/)
-
-Poetry es un gestor de dependencias que será el encargado de instalar las bibliotecas necesarias y así cualquiera podrá ejecutarlo sin problema y fácilmente.
-Ésto es algo que suele ser más difícil de gestionar y funciona como es esperado. Es intuitiva y resulta fácil eliminar paquetes y sus dependencias.
-Además de su velocidad de instalación, cuenta con un buen soporte y trabaja sobre el fichero 'pyproject.toml' que es el archivo oficial de Python
-para la gestión de dependencias desde que se introdujo [PEP 518](https://www.python.org/dev/peps/pep-0518/#file-format).
-
-- Puntuación: 3/3
-- Conclusión: ✓
-
-
-### [Pipenv](https://pipenv.pypa.io/en/latest/)
-
-Debido al gran papel que desempeña Python en el mundo de la programación Pipenv aparece como una herramienta implicada en la resolución de las dependencias
-con las bibliotecas utilizadas en un proyecto. El una herramienta popular y el soporte que tiene es realmente activo, suele haber respuestas a sus *issues* con
-notable inmediatez.
-
-- Puntuación: 3/3
-- Conclusión: ✓
-
-### Decisión
-
-Existe un empate entre *Poetry* y *Pipenv* y ambos son buenos recursos y se adaptan a los criterios descritos, sin embargo, un factor que inclina la 
-balanza a favor de *Poetry* es que éste soporta el fichero 'pyproject.toml'. De manera que se escoge *Poetry* como gestor de dependencias.
-
 ## *Task runner*
 
 Requisitos de un gestor de tareas a tener en cuenta:
@@ -65,24 +20,18 @@ Requisitos de un gestor de tareas a tener en cuenta:
 - Que sea conocido entre la comunidad Python y ampliar el alcance del desarrollo.
 - Configuración en un fichero independiente.
 
-### [Celery](https://docs.celeryproject.org/en/stable/index.html)
+### [Make](https://www.gnu.org/software/make/manual/make.html)
+La herramienta make basa su funcionamiento en la estructura de un único archivo Makefile y se puede considerar una opción apta para
+ser analizada y determinar si podría ser útil para usarla en el proyecto.
 
-Es un *task runner* simple y sencillo de utilizar.
-Cuenta con una gran comunidad tras él proporcionándole un mantenimiento periódico.
-Se basa en el uso de una cola de tareas para la ejecución de operaciones utilizando las herramientas requeridas.
-Un inconveniente es que necesita utilizar un *broker* como por ejemplo [RabbitMQ](https://www.rabbitmq.com/) para enviar y recibir mensajes, por lo que incluye dependencias y no cumple un requisito.
-  
+Se caracteriza por no tener una sintaxis excesivamente difícil o compleja y tampoco resulta arduo iniciarse a la herramienta.
+
+A día de hoy sigue estando respaldada por los desarrolladores y actualizándose.
+
+En concreto es muy utilizada en los sistemas operativos tipo Unix/Linux, pues es un comando normalmente utilizado para la compilación de una gran cantidad
+de programas y el task runner por excelencia. Pero por parte de la comunidad de Python no se llega a considerar como específico del lenguaje.
+
 - Puntuación: 3/4
-- Conclusión: ✗
- 
-### [Darq](https://github.com/seedofjoy/darq)
-
-Es un *task runner* que permite la ejecución asíncrona tomando algunas características de *Celery* e imponiéndose por encima.
-Permite organizar las tareas en colas y la finalización de este task runner se lleva a cabo cuando todas las tareas han sido ya ejecutadas. 
-Su soporte es constante y frecuentemente actualizado. 
-Sin embargo no tiene la misma popularidad que su predecesor *Celery* y menos desarrolladores lo conocen.
-
-- Puntuación: 3.5/4
 - Conclusión: ✗
  
 ### [Poethepoet](https://github.com/nat-n/poethepoet)
