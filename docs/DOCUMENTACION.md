@@ -31,12 +31,11 @@ eso se traduce en pérdidas y supone una cantidad de dinero que al final no pued
 
 - [HU1](https://github.com/NachoCarher/MyHams/issues/6) -> Como empresario, quiero que el sistema me proporcione información como para poder decidir sobre que productos de los que tengo en mi inventario son los que debería seguir vendiendo o aumentar su stock y cúales son aquellos que no me están siendo rentables y debería retirar.
 - [HU2](https://github.com/NachoCarher/MyHams/issues/7) -> Como empresario, una cosa que se debe de manejar bien en el sector alimentario es saber detectar a la perfección cuáles son aquellos productos que generan pérdidas o bien porque se venden poco o bien porque a pesar de que no se vendan tan mal, el hecho de mantenerlos a cierta temperatura (mantenimiento) supone un gasto notable. Por eso en este negocio es importante disponer de productos que se vendan lo antes posible, pues al ser alimentos, disponen de fecha de caducidad y una vez pasada ésta no se podrán vender.
-- [HU3](https://github.com/NachoCarher/MyHams/issues/11) -> Como empresario, me gustaría poder registrar en la aplicación los distintos tipos de productos que venderé en mi negocio con su respectiva información para poder organizar más intuitivamente el stock.
-
+- [HU3](https://github.com/NachoCarher/MyHams/issues/23) -> Como empresario, es muy importante considerar con cuidado los niveles máximos de inventario para evitar un exceso que genere costos de almacenamiento si el producto tarda en venderse y los niveles mínimos para no quedarse con cero existencias.
 ## Milestones
 
 | **Milestone** | **Contenido** |
 | ------------- | --------------- 
 | [M0 - Sistema de gestión de productos](https://github.com/NachoCarher/MyHams/milestone/1) | Desarrollar una entidad en la que se puedan almacenar los productos disponibles y cada uno con su información correspondiente. |
 | [M1 - Sistema de gestión de inventario](https://github.com/NachoCarher/MyHams/milestone/5) | Se pretende desarrollar software que permita al cliente registrar los productos que tiene intención de vender (stock) así como los datos de ventas de cada uno. |
-| [M2 - Programa estadístico](https://github.com/NachoCarher/MyHams/milestone/4) | Se requiere una función que calcule y devuelva en base al número de ventas, precio de compra y P.V.P (precio de venta al público) de un producto un índice de rentabilidad asociado a él. |
+| [M2 - Función índice rentabilidad](https://github.com/NachoCarher/MyHams/milestone/4) | Se requiere una función que calcule y devuelva en base al número de ventas, precio de compra y P.V.P (precio de venta al público) de un producto un índice de rentabilidad asociado a él. |

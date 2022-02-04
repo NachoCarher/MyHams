@@ -117,3 +117,12 @@ sys     0m 0,027s
 Como podemos observar, la imagen `python:3.8-slim` al tener menos dependencias que instalar es superior aunque la diferencia por tamaño no sea muy exagerada o determinante. Por otro lado, si apreciamos el tiempo que se tardan en construir las imágenes, aquí sí que algo más notable la diferencia con respecto a `python:3.8-alpine`.
 
 Por la implicación de trabajo extra que requiere `Alpine`, su exposición a [bugs en tiempo de ejecución](https://bugs.python.org/issue32307) (aunque éste no cubra Python 3.8) debido a usar otras bibliotecas y sus peores resultados obtenidos nos decantamos por `Slim`.
+
+## Dockerfile del proyecto
+Se ha tratado en seguir en todo momento las buenas prácticas de Dockerfile.
+
+- Se utiliza un usuario *myhams* con los privilegios o permisos esenciales, con el objeto de obstruir o dificultar un escalado durante la ejecución del contenedor.
+- Organizando todo lo posible bajo la misma capa se consigue incrementar la legibilidad del código y además resulta más sencillo de mantener. De manera que en lugar de utilizar varias instrucciones `RUN` se ha reunido todo en una haciendo uso de los operadores `&&`.
+- Proporcionar información útil o metadatos sobre el desarrollador del Dockerfile y la versión utilizada.
+- El hecho de no tomar una imagen completa como la de Ubuntu o Python si no una variante como slim en este caso también es una buena práctica. Pues están lo mejor optimizadas posible y son pequeñas.
+- Se ha prestado atención a no utilizar instrucciones u ordenes como `ROOT` o `sudo`. Es importante tener en cuenta que una mala gestión de los privilegios puede ocasionar daños o problemas inesperados.

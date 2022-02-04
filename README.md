@@ -82,6 +82,16 @@ por 'test_'. Tambien se puede ejecutar un test determinado o bien seleccionar un
 inv test
 ```
 
+Los tests se pueden ejecutar en un entorno aislado mediante un contenedor de Docker que previamente ha sido construido en base a una imagen con las características necesarias para que se realice el proceso sin ningún tipo de problema.
+
+La elección de una imagen base de la que partir para poder generar este entorno aislado adaptado para el proyecto se encuentra documentada [aquí](docs/docker.md).
+
+Con el siguiente comando se puede usar un contenedor Docker para lanzar los tests unitarios. Se descarga automáticamente la imagen requerida y los ejecuta.
+
+```
+inv docker
+```
+
 Funcionalidades que se testean:
 - Comprobar que hay una selección de productos disponibles.
 - Comprobar que la cantidad de un producto es inferior o igual a un nivel máximo especificado.
@@ -91,3 +101,4 @@ Funcionalidades que se testean:
 Para obtener más información acerca del proyecto puede consultar:
 - [Usuarios e historia de usuario](docs/DOCUMENTACION.md)
 - [Herramientas de desarrollo](docs/dev_tools.md)
+- [Elección de imagen base para el contenedor para pruebas](docs/docker.md)
