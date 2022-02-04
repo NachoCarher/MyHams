@@ -24,3 +24,10 @@ def test(c):
     Lanza los tests creados para el proyecto
     '''
     run ('python3 -m pytest')
+
+@task
+def docker(c):
+    '''
+    Lanza los tests dentro de un contenedor
+    '''
+    run ("docker run -t -v $(pwd):/myhams/test nachocarher/myhams")
