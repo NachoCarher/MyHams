@@ -126,3 +126,4 @@ Se ha tratado en seguir en todo momento las buenas prácticas de Dockerfile.
 - Proporcionar información útil o metadatos sobre el desarrollador del Dockerfile y la versión utilizada.
 - El hecho de no tomar una imagen completa como la de Ubuntu o Python si no una variante como slim en este caso también es una buena práctica. Pues están lo mejor optimizadas posible y son pequeñas.
 - Se ha prestado atención a no utilizar instrucciones u ordenes como `ROOT` o `sudo`. Es importante tener en cuenta que una mala gestión de los privilegios puede ocasionar daños o problemas inesperados.
+- Al añadir la línea `poetry config virtualenvs.create false` en el Dockerfile lo que se busca es que poetry no cree ningún entorno virtual para la instalación de las dependencias necesarias para el proyecto ya que no se considera necesario.
