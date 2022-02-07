@@ -23,7 +23,7 @@ def test(c):
     '''
     Lanza los tests creados para el proyecto
     '''
-    run ('python3 -m pytest')
+    run ('python3 -m pytest -p no:cacheprovider')
 
 @task
 def docker(c):
