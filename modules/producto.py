@@ -1,18 +1,29 @@
-
 # Clase para almacenar la info de un producto
 
 class Producto:
-    def __init__(self, nom, info):
-        self.nombre = nom    # Correspondiente al nombre del producto
-        self.informacion= info # Información del producto
+    def __init__(self, id='', nom='', info=''):
+        """
+        Clase que representa un producto de un catálogo.
 
-    def getNombre(self):
+        Parámetros
+        ----------
+        id : str, default=''
+            Identificador del producto.
+        nom : str, default=''
+            Nombre del producto.
+        info : str, default=''
+            Información sobre las características del producto.
+        """
+
+        self.id = id
+        self.nombre = nom    
+        self.informacion = info
+
+    def get_id(self):
+        return self.id
+
+    def get_nombre(self):
         return self.nombre
 
-	
-    def getInformacion(self):
+    def get_informacion(self):
         return self.informacion
-
-	
-
-   
