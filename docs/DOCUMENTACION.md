@@ -29,15 +29,13 @@ eso se traduce en pérdidas y supone una cantidad de dinero que al final no pued
 
 ## Historias de usuario
 
-- [HU1](https://github.com/NachoCarher/MyHams/issues/4) -> Como empresario, quiero conocer las opiniones de los usuarios con respecto a un producto en concreto para saber si me sería rentable comprarlo para mi negocio. Me resulta interesante la opción de valorar un producto porque el sistema en función de mis gustos me recomendará productos afines a mí.
-- [HU2](https://github.com/NachoCarher/MyHams/issues/6) -> Como empresario, quiero un asesoramiento sobre que productos de los que tengo en mi inventario son los que debería seguir vendiendo o aumentar su stock y cúales son aquellos que no me están siendo rentables y debería retirar.
-- [HU3](https://github.com/NachoCarher/MyHams/issues/7) -> Como empresario, quiero disponer de gráficas y datos estadísticos que me muestren cuales son los productos más demandados por otros usuarios para poder adquirirlos e incrementar potencialmente las ventas de mi negocio.
-
+- [HU1](https://github.com/NachoCarher/MyHams/issues/6) -> Como empresario, quiero que el sistema me proporcione información como para poder decidir sobre que productos de los que tengo en mi inventario son los que debería seguir vendiendo o aumentar su stock y cúales son aquellos que no me están siendo rentables y debería retirar.
+- [HU2](https://github.com/NachoCarher/MyHams/issues/7) -> Como empresario, una cosa que se debe de manejar bien en el sector alimentario es saber detectar a la perfección cuáles son aquellos productos que generan pérdidas o bien porque se venden poco o bien porque a pesar de que no se vendan tan mal, el hecho de mantenerlos a cierta temperatura (mantenimiento) supone un gasto notable. Por eso en este negocio es importante disponer de productos que se vendan lo antes posible, pues al ser alimentos, disponen de fecha de caducidad y una vez pasada ésta no se podrán vender.
+- [HU3](https://github.com/NachoCarher/MyHams/issues/23) -> Como empresario, es muy importante considerar con cuidado los niveles máximos de inventario para evitar un exceso que genere costos de almacenamiento si el producto tarda en venderse y los niveles mínimos para no quedarse con cero existencias.
 ## Milestones
 
 | **Milestone** | **Contenido** |
 | ------------- | --------------- 
-| [M0 - Diseño de estructuras de datos](https://github.com/NachoCarher/MyHams/milestone/4) | Planteamiento, estudio y desarrollo de las estructuras de datos o clases que darán pie al desarrollo futuro y evolución del proyecto sofware. |
-| [M1 - Recolección de datos](https://github.com/NachoCarher/MyHams/milestone/1) | Desarrollo del módulo encargado de que en base a los datos que el usuario ha proporcionado sobre el estado de su inventario y sobre sus ventas, los almacena y genera una lista de recomendaciones enfocadas en aumentar las ganancias del negocio. |
-| [M2 - Programa estadístico](https://github.com/NachoCarher/MyHams/milestone/2) | Desarrollo de un programa que en función de los datos de las compras realizadas en diferentes períodos de tiempo pueda generar gráficas y datos estadísticos. |
-| [M3 - Interfaz de reseñas](https://github.com/NachoCarher/MyHams/milestone/3) | Desarrollar una interfaz en la que los usuarios valoran y realizan comentarios sobre los productos. También se pueden valorar las reseñas de otros clientes para que puedan ser filtradas por relevancia o fecha. |
+| [M0 - Sistema de gestión de productos](https://github.com/NachoCarher/MyHams/milestone/1) | Desarrollar una entidad en la que se puedan almacenar los productos disponibles y cada uno con su información correspondiente. |
+| [M1 - Sistema de gestión de inventario](https://github.com/NachoCarher/MyHams/milestone/5) | Se pretende desarrollar software que permita al cliente registrar los productos que tiene intención de vender (stock) así como los datos de ventas de cada uno. |
+| [M2 - Función índice rentabilidad](https://github.com/NachoCarher/MyHams/milestone/4) | Se requiere una función que calcule y devuelva en base al número de ventas, precio de compra y P.V.P (precio de venta al público) de un producto un índice de rentabilidad asociado a él. |

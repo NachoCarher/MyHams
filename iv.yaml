@@ -1,5 +1,11 @@
 lenguaje: python
-objetos_valor: 
-  -modules/producto.py
-  -modules/productoVenta.py
 
+entidad: modules/producto.py
+  
+automatizar:
+  fichero: tasks.py
+  orden: inv
+
+test: tests/test_producto_venta.py
+
+CI: .appveyor.yml 
