@@ -1,0 +1,40 @@
+name: "Ejecuta los tests unitarios en PR"
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+      - Objetivo-*
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        versiones: ['3.9','3.10']
+
+    name: 'Tests Python ${{matrix.versiones}}'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: 'Setup Python ${{matrix.versiones}}'
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{matrix.versiones}}
+
+      - name: Descargar e instalar poetry
+        run: 
+          pip install poetry  
+
+      - name: Instalar dependencias
+        run:
+          poetry install
+
+      - name: Ejecutar tests
+        run: 'poetry run inv test'
