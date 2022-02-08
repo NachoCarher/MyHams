@@ -7,3 +7,5 @@ automatizar:
   orden: inv
 
 test: tests/test_producto_venta.py
+
+CI: .appveyor.yml 
