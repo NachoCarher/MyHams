@@ -38,6 +38,7 @@ Desarrollar un sistema encargado de la gestión de un almacén de productos cár
 		
 ## Requisitos
 - Python **3.8+**
+Se ha seleccionado esta versión de Python pues el estado de mantenimiento bajo el que se encuentra es el de *security*. Sin embargo, las dos versiones posteriores, `3.9` y `3.10` se encuentran en fase *bugfix*.
 
 ## Dependencias
 Gestionadas con el uso de [Poetry](https://python-poetry.org/), consultar [`pyproject.toml`](pyproject.toml).
@@ -102,3 +103,4 @@ Para obtener más información acerca del proyecto puede consultar:
 - [Usuarios e historia de usuario](docs/DOCUMENTACION.md)
 - [Herramientas de desarrollo](docs/dev_tools.md)
 - [Elección de imagen base para el contenedor para pruebas](docs/docker.md)
+- [Integración Continua: elección de plataformas y ejecución de tests](docs/doc_CICD.md)
