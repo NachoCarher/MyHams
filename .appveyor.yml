@@ -1,0 +1,12 @@
+image: Ubuntu
+
+# This avoids AppVeyor making a sort of 'virtual' build against master everytime a PR is updated, as
+# stated [here](https://help.appveyor.com/discussions/questions/42352-multiple-builds-for-a-pr).
+skip_branch_with_pr: true
+
+services:
+  - docker
+
+build: off
+test_script:
+  - docker run -t -v $(pwd):/app/test nachocarher/myhams
