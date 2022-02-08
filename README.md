@@ -36,8 +36,9 @@ Desarrollar un sistema encargado de la gestión de un almacén de productos cár
 		Considero que es un error el hecho de no saber identificar que productos son los que provocan pérdidas en un negocio. Y a veces puede ser
 		difícil reconocerlos puesto a que las pérdidas pueden ser ínfimas u ofrecer un rendimiento muy irregular con altos márgenes positivos y negativos.
 		
-## Requisitos
+## Lenguaje de programación
 - Python **3.8+**
+
 Se ha seleccionado esta versión de Python pues el estado de mantenimiento bajo el que se encuentra es el de *security*. Sin embargo, las dos versiones posteriores, `3.9` y `3.10` se encuentran en fase *bugfix*.
 
 ## Dependencias
